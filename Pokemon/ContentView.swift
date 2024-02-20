@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let model = Model()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            ForEach(model.pokemonLinks) { link in
+                Text(link.name)
+            }
         }
         .padding()
     }
