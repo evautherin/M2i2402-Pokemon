@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    let model = Model()
-    
+    @Environment(Model.self) var model
+
     var body: some View {
-        List {
-            ForEach(model.pokemonLinks) { link in
-                Text(link.name)
+        NavigationView {
+            List {
+                ForEach(model.pokemonLinks) { link in
+                    NavigationLink(destination: {
+                        PokemonView(urlString: link.url)
+                    }, label: {
+                        Text(link.name)
+                    })
+                }
             }
+            .navigationTitle("Pokemons")
+            .padding()
         }
-        .padding()
     }
 }
 
+
 #Preview {
-    ContentView()
+    ContentView().environment(Model())
 }

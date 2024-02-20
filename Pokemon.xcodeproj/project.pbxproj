@@ -12,6 +12,8 @@
 		8F3FAAB42B84C1DE00C5407C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3FAAB32B84C1DE00C5407C /* Assets.xcassets */; };
 		8F3FAAB72B84C1DE00C5407C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3FAAB62B84C1DE00C5407C /* Preview Assets.xcassets */; };
 		8F3FAABE2B84C21700C5407C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3FAABD2B84C21700C5407C /* Model.swift */; };
+		8F3FAAC02B84DB9D00C5407C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3FAABF2B84DB9D00C5407C /* Pokemon.swift */; };
+		8F3FAAC22B84DC8700C5407C /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3FAAC12B84DC8700C5407C /* PokemonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		8F3FAAB32B84C1DE00C5407C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3FAAB62B84C1DE00C5407C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F3FAABD2B84C21700C5407C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8F3FAABF2B84DB9D00C5407C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		8F3FAAC12B84DC8700C5407C /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				8F3FAAAF2B84C1DC00C5407C /* PokemonApp.swift */,
 				8F3FAAB12B84C1DC00C5407C /* ContentView.swift */,
 				8F3FAABD2B84C21700C5407C /* Model.swift */,
+				8F3FAABF2B84DB9D00C5407C /* Pokemon.swift */,
+				8F3FAAC12B84DC8700C5407C /* PokemonView.swift */,
 				8F3FAAB32B84C1DE00C5407C /* Assets.xcassets */,
 				8F3FAAB52B84C1DE00C5407C /* Preview Content */,
 			);
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3FAABE2B84C21700C5407C /* Model.swift in Sources */,
+				8F3FAAC02B84DB9D00C5407C /* Pokemon.swift in Sources */,
 				8F3FAAB22B84C1DC00C5407C /* ContentView.swift in Sources */,
+				8F3FAAC22B84DC8700C5407C /* PokemonView.swift in Sources */,
 				8F3FAAB02B84C1DC00C5407C /* PokemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
