@@ -11,7 +11,7 @@ struct ContentView: View {
     @Environment(Model.self) var model
 
     var body: some View {
-        NavigationView {
+        NavigationSplitView {
             List {
                 ForEach(model.pokemonLinks) { link in
                     NavigationLink(destination: {
@@ -23,6 +23,8 @@ struct ContentView: View {
             }
             .navigationTitle("Pokemons")
             .padding()
+        } detail: {
+            Text("Please select a row")
         }
     }
 }

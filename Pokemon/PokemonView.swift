@@ -13,11 +13,21 @@ struct PokemonView: View {
     
     var body: some View {
         Group {
-            if let pokemon {
-                Text(pokemon.name)
-            } else {
-                ProgressView()
+            switch pokemon {
+            case .none: ProgressView()
+            case .some(let pokemon):
+                VStack {
+                    Text(pokemon.name)
+                    Button("Button") {
+                        print("OK")
+                    }
+                }
             }
+//            if let pokemon {
+//                Text(pokemon.name)
+//            } else {
+//                ProgressView()
+//            }
         }
         .task {
             do {
